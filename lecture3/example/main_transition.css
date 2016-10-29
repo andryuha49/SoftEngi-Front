@@ -1,0 +1,16 @@
+body{
+	padding: 50px;
+}
+
+.square{
+	width: 200px;
+	height: 200px;
+}
+
+div {
+  transition: background-color 0.5s ease;
+  background-color: red;
+}
+div:hover {
+  background-color: green;
+}

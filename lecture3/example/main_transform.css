@@ -1,0 +1,19 @@
+body{
+	padding: 50px;
+}
+
+.square{
+	background-color: red;
+	width: 200px;
+	height: 200px;
+}
+
+div.transform
+{
+    transform: translate(50px, 80px);
+    /*transform: rotate(30deg);*/
+    /*transform: scale(2,4);
+    /*transform: skew(30deg,20deg);*/
+    /*transform: rotateX(120deg);*/
+    /*transform: rotateY(130deg);*/
+} 
