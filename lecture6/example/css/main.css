@@ -1,0 +1,17 @@
+    .login-form{
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    .control-labal{
+        display: block;
+    }
+    .error-message{
+        display: none;
+        color: red;
+    }
+    .error{
+        border:1px solid red;
+    }
+    .error + .error-message{
+        display:inline-block;
+    }

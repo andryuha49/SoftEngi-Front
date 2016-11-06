@@ -6,17 +6,18 @@ var watch = require('gulp-watch');
 var sass = require('gulp-sass');
  
 gulp.task('less', function () {
-  return gulp.src('src/less/**/*.less')
+  return gulp.src('./src/less/**/*.less')
+    .pipe(less().on('error', sass.logError))
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(gulp.dest('public/css'));
+    .pipe(gulp.dest('./dist/css/'));
 });
  
 gulp.task('sass', function () {
   return gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./dist/css'));
 });
 
 
@@ -25,5 +26,5 @@ gulp.task('watch', function(){
         gulp.start('less');
     });
 
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./src/sass/**/*.scss', ['sass']);
 });
