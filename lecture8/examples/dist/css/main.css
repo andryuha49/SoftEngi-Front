@@ -1,0 +1,22 @@
+body {
+  font-size: 102%;
+  color: red;
+}
+.container {
+  margin: 0 auto;
+}
+.gameGrid {
+  margin: 0 auto;
+}
+.gameGrid td {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+.gameGrid td.player:before {
+  content: "X";
+}
+.gameGrid td.bot:before {
+  content: "O";
+}
