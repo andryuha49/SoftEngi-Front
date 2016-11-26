@@ -40,6 +40,4 @@ function reset() {
     for(var i = 0; i < cels.length; i++){
         cels[i].className = '';
     }
-
-    //window.location.reload();
 }
